@@ -19,6 +19,7 @@ export default class App extends React.Component {
     return (
       <div className="component-app">
         <Display value={this.state.next || this.state.total || "0"} />
+<div>{process.env.PUK || 'defaultPUK'}</div>
         <ButtonPanel clickHandler={this.handleClick} />
       </div>
     );
